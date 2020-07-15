@@ -65,6 +65,8 @@ For every static pipeline, we create a materialized view using the query extract
 
 ### Usage:
 
+The command `psql -h localhost -p 5432 -U postgres -d continuous-view` opens a connection to the database (the password is `123456`).
+
 To create the TPC-H schema and base tables for manual experiments please run `\i src/sql/tpch/setup.sql`.
 
 When executing `\i src/sql/continuous-views.sql`, all relevant schemas and functions are loaded into the current PostgreSQL database. The meta information and materialized views for the split maintenance are stored in the schema `cv`. 
