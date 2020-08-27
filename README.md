@@ -1,6 +1,6 @@
 # Continuous Views for PostgreSQL
 
-This repository contains the source code that we used to generate and benchmark continuous views in PostgreSQL for our paper [Meet Me Halfway: Split Maintenance of Continuous Views](https://db.in.tum.de).
+This repository contains the source code that we used to generate and benchmark continuous views in PostgreSQL for our paper [Meet Me Halfway: Split Maintenance of Continuous Views](https://www.vldb.org/pvldb/vol13/p2620-winter.pdf).
 The feature set and syntax of this proof-of-concept implementation of continuous views in PostgreSQL differs from those in the paper. However, the underlying strategy of split maintenance is nearly identical, albeit less integrated and optimized. 
 We evaluated our continuous view approach based on split maintenance strategy for queries 1, 3, 6, 15, and 20 of the TPC-H benchmark and compared it to eager and deferred maintenance strategies.
 
